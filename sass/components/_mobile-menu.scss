@@ -44,6 +44,11 @@
 .mobile-menu_close-icon {
     width: 19px;
     height: 19px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--button-color)
+    }
 }
 
 .mobile-menu__list {
@@ -100,10 +105,13 @@
 }
 
 .mobile-menu__social-item {
-    border-right: 1px solid rgba(33, 33, 33, 0.2); 
-    &:last-child {
-        border: none;
-    }
+   &::after {
+    content: "";
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+   }
+   &:last-child::after {
+    border: none;
+   }
 }
 
 .mobile-menu__social-link {
