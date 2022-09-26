@@ -30,7 +30,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
 }
 
 .modal__form__input-icon {
@@ -45,9 +45,9 @@
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal__form__input:focus+& {
-        fill: var(--button-color);
-    }
+  .modal__form__input:focus+& {
+    fill: var(--button-color);
+  }
 }
 
 .modal__form__input:focus,
@@ -65,14 +65,15 @@
   padding: 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
 
-        color: rgba(117, 117, 117, 0.5);
-    }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 
@@ -85,9 +86,8 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   letter-spacing: 0.03em;
 
@@ -108,18 +108,18 @@
   border-radius: 2px;
   cursor: pointer;
 
-.modal__form__check:checked+& {
-        background-color: var(--button-color);
-        border: none;
-    }
+  .modal__form__check:checked+& {
+    background-color: var(--button-color);
+    border: none;
+  }
 }
 
 .modal__form__own-checkbox-icon {
   display: none;
 
   .modal__form__check:checked+.modal__form__own-checkbox & {
-      display: block;
-    }
+    display: block;
+  }
 }
 
 
@@ -151,10 +151,17 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            background-color: #188ce8;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        }
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form__check-field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
