@@ -124,7 +124,7 @@
       </div>
     </header>
     <!-- Основний контент -->
-    <!-- <main>
+    <main>
       <section class="section">
         <h1 class="visually-hidden">Галерея</h1>
         <div class="container">
@@ -144,13 +144,45 @@
             <li class="filter__list__item">
               <button type="button" class="filter__list__btn">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
     <!-- Галерея -->
-    <!-- <ul class="gallery__list">
+    <ul class="gallery__list">
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="" >
                 <div class="gallery__list__img-wrapper">
-                <img  src="./images/gallery-1.jpg" alt="Ноутбук" />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery1-desktop.webp 1x, ./images/gallery/gallery1-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery1-desktop.jpg 1x, ./images/gallery/gallery1-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery1-tablet.webp 1x, ./images/gallery/gallery1-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery1-tablet.jpg 1x, ./images/gallery/gallery1-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery1-mobile.webp 1x, ./images/gallery/gallery1-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery1-mobile.jpg 1x, ./images/gallery/gallery1-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery1-mobile.jpg" alt="Ноутбук" class="gallery__list-photo" />
+      </picture>
                 <p class="gallery__list__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -164,11 +196,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img
-                src="./images/gallery-2.jpg"
-                alt="Двоє гравців в баскетболі"
-                width="370"
-              />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery2-desktop.webp 1x, ./images/gallery/gallery2-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery2-desktop.jpg 1x, ./images/gallery/gallery2-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery2-tablet.webp 1x, ./images/gallery/gallery2-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery2-tablet.jpg 1x, ./images/gallery/gallery2-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery2-mobile.webp 1x, ./images/gallery/gallery2-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery2-mobile.jpg 1x, ./images/gallery/gallery2-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery2-mobile.jpg" alt="Двоє гравців в баскетболі" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -180,11 +240,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img
-                src="./images/gallery-3.jpg"
-                alt="Логотип ресторану"
-                width="370"
-              />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery3-desktop.webp 1x, ./images/gallery/gallery3-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery3-desktop.jpg 1x, ./images/gallery/gallery3-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery3-tablet.webp 1x, ./images/gallery/gallery3-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery3-tablet.jpg 1x, ./images/gallery/gallery3-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery3-mobile.webp 1x, ./images/gallery/gallery3-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery3-mobile.jpg 1x, ./images/gallery/gallery3-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery3-mobile.jpg" alt="Логотип ресторану" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -196,7 +284,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img src="./images/gallery-4.jpg" alt="Навушники" width="370" />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery4-desktop.webp 1x, ./images/gallery/gallery4-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery4-desktop.jpg 1x, ./images/gallery/gallery4-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery4-tablet.webp 1x, ./images/gallery/gallery4-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery4-tablet.jpg 1x, ./images/gallery/gallery4-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery4-mobile.webp 1x, ./images/gallery/gallery4-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery4-mobile.jpg 1x, ./images/gallery/gallery4-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery4-mobile.jpg" alt="Навушники" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -208,7 +328,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img src="./images/gallery-5.jpg" alt="Дві коробки" width="370" />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery5-desktop.webp 1x, ./images/gallery/gallery5-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery5-desktop.jpg 1x, ./images/gallery/gallery5-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery5-tablet.webp 1x, ./images/gallery/gallery5-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery5-tablet.jpg 1x, ./images/gallery/gallery5-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery5-mobile.webp 1x, ./images/gallery/gallery5-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery5-mobile.jpg 1x, ./images/gallery/gallery5-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery5-mobile.jpg" alt="Дві коробки" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -220,7 +372,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img src="./images/gallery-6.jpg" alt="IMac" width="370" />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery6-desktop.webp 1x, ./images/gallery/gallery6-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery6-desktop.jpg 1x, ./images/gallery/gallery6-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery6-tablet.webp 1x, ./images/gallery/gallery6-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery6-tablet.jpg 1x, ./images/gallery/gallery6-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery6-mobile.webp 1x, ./images/gallery/gallery6-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery6-mobile.jpg 1x, ./images/gallery/gallery6-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery6-mobile.jpg" alt="IMac" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -232,7 +416,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img src="./images/gallery-7.jpg" alt="Книга" width="370" />
+                   <picture>
+        <source
+          srcset="./images/gallery/gallery7-desktop.webp 1x, ./images/gallery/gallery7-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery7-desktop.jpg 1x, ./images/gallery/gallery7-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery7-tablet.webp 1x, ./images/gallery/gallery7-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery7-tablet.jpg 1x, ./images/gallery/gallery7-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery7-mobile.webp 1x, ./images/gallery/gallery7-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery7-mobile.jpg 1x, ./images/gallery/gallery7-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery7-mobile.jpg" alt="Книга" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -244,7 +460,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img src="./images/gallery-8.jpg" alt="Візитка" width="370" />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery8-desktop.webp 1x, ./images/gallery/gallery8-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery8-desktop.jpg 1x, ./images/gallery/gallery8-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery8-tablet.webp 1x, ./images/gallery/gallery8-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery8-tablet.jpg 1x, ./images/gallery/gallery8-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery8-mobile.webp 1x, ./images/gallery/gallery8-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery8-mobile.jpg 1x, ./images/gallery/gallery8-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery8-mobile.jpg" alt="Візитка" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -256,11 +504,39 @@
             <li class="gallery__list__item">
               <a class="gallery__list__link" href="">
                 <div class="gallery__list__img-wrapper">
-              <img
-                src="./images/gallery-9.jpg"
-                alt="Людина працює за ноутбуком"
-                width="370"
-              />
+                  <picture>
+        <source
+          srcset="./images/gallery/gallery9-desktop.webp 1x, ./images/gallery/gallery9-desktop@2.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery9-desktop.jpg 1x, ./images/gallery/gallery9-desktop@2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery9-tablet.webp 1x, ./images/gallery/gallery9-tablet@2.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery9-tablet.jpg 1x, ./images/gallery/gallery9-tablet@2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/gallery/gallery9-mobile.webp 1x, ./images/gallery/gallery9-mobile@2.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/gallery/gallery9-mobile.jpg 1x, ./images/gallery/gallery9-mobile@2.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/gallery/gallery9-mobile.jpg" alt="Людина працює за ноутбуком" class="gallery__list-photo" />
+      </picture>
               <p class="gallery__list__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               <div class="gallery__list__thumb">
@@ -273,7 +549,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <footer class="footer__background">
       <div class="container footer-flex">
