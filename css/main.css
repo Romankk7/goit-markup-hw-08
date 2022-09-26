@@ -149,6 +149,7 @@ a {
   .mobile-menu__social-list {
     display: flex;
     column-gap: 10px;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-item::after {
     content: "";
@@ -934,6 +935,11 @@ a {
     fill: var(--button-color);
   }
 }
+footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer__background {
   text-align: center;
   padding-top: 60px;
