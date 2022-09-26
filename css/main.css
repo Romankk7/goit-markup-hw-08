@@ -172,15 +172,22 @@ a {
   }
 }
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -398,10 +405,16 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -789,15 +802,18 @@ a {
   background: var(--white-background-color);
 }
 
-.team__list {
-  display: flex;
-  column-gap: 30px;
-}
-
 .team__list__card {
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--text-color);
+}
+.team__list__card:last-child {
+  margin-bottom: 0;
+}
+
+.team__list__img {
+  min-width: 100%;
 }
 
 .team__list__thumb {
@@ -835,22 +851,52 @@ a {
   height: 44px;
   border-radius: 50%;
   background-color: var(--text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social__list__link:hover, .social__list__link:focus {
-  background-color: var(--button-color);
 }
 
 .social__list__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social__list__link:hover .social__list__icon, .social__list__link:focus .social__list__icon {
-  fill: var(--text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__list__img {
+    min-width: 354px;
+  }
+  .team__list__card {
+    width: 354px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .team__list__img {
+    min-width: 270px;
+  }
+  .team__list__card {
+    width: 270px;
+  }
+  .social__list__link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social__list__link:hover, .social__list__link:focus {
+    background-color: var(--button-color);
+  }
+  .social__list__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social__list__link:hover .social__list__icon, .social__list__link:focus .social__list__icon {
+    fill: var(--text-color);
+  }
+}
 .client__list {
   display: flex;
   gap: 30px;
