@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 768px) {
     .filter__list {
-        width: auto;
+        max-width: none;
         flex-wrap: nowrap;
         margin-left: auto;
         justify-content: center;
