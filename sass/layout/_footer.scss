@@ -10,6 +10,11 @@ footer .logo {
     background: var(--background-color);
 }
 
+.footer-contacts,
+.footer-social {
+    margin-bottom: 60px;
+}
+
 footer .logo {
     margin-right: 0;
 }
@@ -31,7 +36,7 @@ address {
     line-height: 1.1;
     letter-spacing: 0.02em;
 
-    color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-address__street,
@@ -41,7 +46,6 @@ address {
 
 .footer__title {
     margin-bottom: 20px;
-    margin-top: 60px;
 
     font-weight: 700;
     font-size: 14px;
@@ -76,7 +80,6 @@ address {
 .footer-form__title {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -144,10 +147,18 @@ address {
 }
 
 @media screen and (min-width: 768px) {
+
+        .footer-contacts,
+        .footer-social {
+            margin-bottom: 0;
+        }
     .footer_thumb {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 60px;
     }
+
+    
 
     .footer__list-social {
         justify-content: flex-start;
@@ -178,6 +189,7 @@ address {
     .footer_thumb {
         justify-content: flex-start;
         align-items: baseline;
+        margin-bottom: 0;
     }
 
     .footer-contacts {
