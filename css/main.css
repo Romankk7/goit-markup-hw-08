@@ -967,8 +967,11 @@ footer .logo {
   background: var(--background-color);
 }
 
-.footer-contacts,
-.footer-social {
+.footer-contacts {
+  margin-bottom: 60px;
+}
+
+.footer_thumb {
   margin-bottom: 60px;
 }
 
